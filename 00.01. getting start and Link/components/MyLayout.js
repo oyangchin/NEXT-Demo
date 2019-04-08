@@ -1,3 +1,4 @@
+// components/MyLayout.js
 import Header from './Header'
 
 const layoutStyle = {
@@ -7,12 +8,12 @@ const layoutStyle = {
 }
 
 const withLayout = Page => {
-  return () => {
+  return () => (
     <div style={layoutStyle}>
       <Header />
       <Page />
     </div>
-  }
+  )
 }
 
 export default withLayout
