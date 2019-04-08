@@ -1,11 +1,6 @@
-import Header from '../components/header';
 
+import withLayout from '../components/MyLayout';
 
-export default function About() {
-  return (
-    <div>
-      <Header />
-      <p>This is the about page</p>
-    </div>
-  )
-}
+const Page = () => <p>This is the about page</p>
+
+export default withLayout(Page)

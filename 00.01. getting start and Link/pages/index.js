@@ -1,12 +1,7 @@
 
-import Header from '../components/header';
+import withLayout from '../components/MyLayout';
 
-const Index = () => (
-  <div>
-    <Header />
-    <p>Hello Next.js</p>
-  </div>
-)
+const Page = () => <p>Hello Next.js</p>
 
-export default Index
+export default withLayout(Page)
 
